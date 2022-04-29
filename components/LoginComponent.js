@@ -1,7 +1,11 @@
 import React, { Component } from "react";
-import { View, Button, StyleSheet } from "react-native";
-import { Input, CheckBox } from "react-native-elements";
+import { View, StyleSheet, ScrollView, Image } from "react-native";
+import { Input, CheckBox, Button, Icon } from "react-native-elements";
 import * as SecureStore from "expo-secure-store";
+import * as ImagePicker from "expo-image-picker";
+import * as Permissions from "expo-permissions";
+import { createBottomTabNavigator } from "react-navigation-tabs";
+import { baseUrl } from "../shared/baseUrl";
 
 class Login extends Component {
   constructor(props) {
